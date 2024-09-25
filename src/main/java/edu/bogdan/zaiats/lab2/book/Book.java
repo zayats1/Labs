@@ -1,4 +1,4 @@
-package edu.bogdan.zaiats.lab1.book;
+package edu.bogdan.zaiats.lab2.book;
 
 /**
  * 5. Book: id, Назва, Автор, Видавництво, Рік видання, Кількість сторінок, Ціна.
