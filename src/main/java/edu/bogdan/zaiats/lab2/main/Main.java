@@ -5,7 +5,7 @@ import edu.bogdan.zaiats.lab2.book.Book;
 import java.util.List;
 
 class Main {
-    private static final Bookshelf books = new Bookshelf(List.of(
+    private static final BookSelector bookShelf = new BookSelector (List.of(
             new Book(8556210, "Dan Brown", "Angels and demons", "Morning", 2014, 625),
             new Book(4852142, "Dan Brown", "Davinci Code", "KFL", 2015, 645),
             new Book(4585545, "Dan Brown", "The Source", "KFL", 2016, 855),
@@ -15,18 +15,18 @@ class Main {
 
 
     public static void main(String[] args) {
-        for (var book : books.books()) {
+        for (var book : bookShelf.getBooks()){
             System.out.println(book.toString());
         }
 
-        var selected = books.withPublicationYear(2018).books();
+        var selected = bookShelf.withPublicationYear(2018).getBooks();
 
         System.out.println("Selected");
         for (var book : selected) {
             System.out.println(book.toString());
         }
 
-        var withDanBrown = books.withAuthor("Dan Brown").withPublishingHouse("Morning").books();
+        var withDanBrown = bookShelf.withAuthor("Dan Brown").withPublishingHouse("Morning") .getBooks() ;
 
         for (var book : withDanBrown) {
             System.out.println(book.toString());
