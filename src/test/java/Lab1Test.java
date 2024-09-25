@@ -1,9 +1,7 @@
 
-import edu.bogdan.zaiats.lab1.FibonacciNumber;
 import org.junit.jupiter.api.Test;
 
 import static edu.bogdan.zaiats.lab1.IsPrime.isPrime;
-import static org.junit.jupiter.api.Assertions.*;
 
 
 public class Lab1Test {
