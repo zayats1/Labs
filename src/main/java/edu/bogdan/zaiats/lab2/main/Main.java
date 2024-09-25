@@ -1,6 +1,6 @@
-package edu.bogdan.zaiats.lab1.main;
+package edu.bogdan.zaiats.lab2.main;
 
-import edu.bogdan.zaiats.lab1.book.Book;
+import edu.bogdan.zaiats.lab2.book.Book;
 
 import java.util.List;
 
