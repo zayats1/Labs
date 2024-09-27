@@ -27,7 +27,7 @@ class Main {
             System.out.println(book.toString());
         }
 
-        System.out.println("Selected with morning");
+        System.out.println("Dan Brown's boo,selected from with the Morning publishing house");
         var withDanBrown =  new BookSelector(bookShelf).withAuthor("Dan Brown").withPublishingHouse("Morning") .getBooks() ;
 
         for (var book : withDanBrown) {
@@ -36,8 +36,14 @@ class Main {
 
         System.out.println("Books with 750 pages");
         var selectedWithPages = new BookSelector(bookShelf).withPageCount(750).getBooks();
-
         selectedWithPages.forEach(book -> System.out.println(book.toString()));
 
+        System.out.println("Books newer than 2015");
+        var newerBooks = new BookSelector(bookShelf).newerThanYear(2015).getBooks();
+        newerBooks.forEach(book -> System.out.println(book.toString()));
+
+        System.out.println("I dont want to be buried in a");
+        var fromStephenKing =  new BookSelector(bookShelf).withAuthor("Stephen King").getBooks();
+        fromStephenKing.forEach(book -> System.out.println(book.toString()));
     }
 }

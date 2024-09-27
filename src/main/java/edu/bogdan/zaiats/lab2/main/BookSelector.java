@@ -21,6 +21,11 @@ public class BookSelector {
         return this;
     }
 
+    public BookSelector  newerThanYear(int year) {
+        this.books = this.books.stream().filter(book -> book.getPublicationYear() > year).toList();
+        return this;
+    }
+
     public BookSelector  withPublishingHouse(String publishingHouse) {
         this.books  = this.books.stream().filter(book -> book.getPublishingHouse().equals(publishingHouse)).toList();
         return this;
