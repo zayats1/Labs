@@ -1,22 +1,37 @@
 package edu.bogdan.zaiats.lab3.main;
 
-import edu.bogdan.zaiats.lab3.game.droids.BattleDroid;
-import edu.bogdan.zaiats.lab3.game.droids.Imposter;
-import edu.bogdan.zaiats.lab3.game.droids.Shaman;
-import edu.bogdan.zaiats.lab3.game.factory.DroidFactory;
+import edu.bogdan.zaiats.lab3.game.Team;
+import edu.bogdan.zaiats.lab3.game.factory.DroidTypes;
+
+import static edu.bogdan.zaiats.lab3.game.factory.DroidFactory.makeDroid
+
+import java.util.List;
 
 class Main {
+    final int ROUNDS = 6;
     public static void main(String[] args) {
-       var r2d2 = new BattleDroid(46,60);
-       var chopper = new BattleDroid(12,10);
-       var imposter = new Imposter(64);
-       var shaman = new Shaman(45);
 
-        r2d2.attack(imposter);
-        chopper.attack(r2d2);
-        System.out.println(imposter.getHealth());
-        System.out.println(r2d2.getHealth());
-        shaman.heal(r2d2);
-        System.out.println(r2d2.getHealth());
+        var team1 =  new Team(List.of(
+                makeDroid(DroidTypes.BATTLE),
+                makeDroid(DroidTypes.BATTLE),
+                makeDroid(DroidTypes.IMPOSTER),
+                makeDroid(DroidTypes.SHAMAN),
+                makeDroid(DroidTypes.SHAMAN),
+                makeDroid(DroidTypes.BATTLE),
+                makeDroid(DroidTypes.BATTLE),
+                makeDroid(DroidTypes.BATTLE)
+        ));
+        var team2 = new Team(List.of(
+                makeDroid(DroidTypes.BATTLE),
+                makeDroid(DroidTypes.BATTLE),
+                makeDroid(DroidTypes.SHAMAN),
+                makeDroid(DroidTypes.SHAMAN),
+                makeDroid(DroidTypes.IMPOSTER),
+                makeDroid(DroidTypes.BATTLE),
+                makeDroid(DroidTypes.BATTLE),
+                makeDroid(DroidTypes.BATTLE)
+        ));
+
+      // TODO
     }
 }

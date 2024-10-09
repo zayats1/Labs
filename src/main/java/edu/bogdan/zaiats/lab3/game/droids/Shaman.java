@@ -5,8 +5,9 @@ import edu.bogdan.zaiats.lab3.game.base.Droid;
 import edu.bogdan.zaiats.lab3.game.base.Vulnerable;
 
 public class Shaman extends Droid implements CanHeal, Vulnerable {
+    int health;
     public Shaman(int health) {
-        super(health);
+        this.health = health;
     }
 
     @Override
@@ -25,5 +26,10 @@ public class Shaman extends Droid implements CanHeal, Vulnerable {
     @Override
     public void receiveHealth(int health) {
         this.health += health;
+    }
+
+    @Override
+    public int getHealth() {
+        return this.health;
     }
 }
