@@ -12,6 +12,7 @@ public class BattleDroid extends Droid implements Vulnerable, CanAttack {
         this.health = health;
     }
 
+
     @Override
     public void attack(Vulnerable target) {
          target.receiveDamage(this.damage);
@@ -33,5 +34,13 @@ public class BattleDroid extends Droid implements Vulnerable, CanAttack {
     @Override
     public int getHealth() {
         return this.health;
+    }
+
+    @Override
+    public String toString() {
+        return "BattleDroid{" +
+                "damage=" + damage +
+                ", health=" + health +
+                '}';
     }
 }

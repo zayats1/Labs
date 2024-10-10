@@ -8,7 +8,7 @@ import edu.bogdan.zaiats.lab3.game.droids.Shaman;
 public class DroidFactory {
     public static Droid makeDroid(DroidTypes type){
        return switch (type){
-           case BATTLE -> new BattleDroid(45,4);
+           case BATTLE -> new BattleDroid(45,40);
            case SHAMAN -> new Shaman(45);
            case IMPOSTER -> new Imposter(64);
        };

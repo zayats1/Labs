@@ -12,7 +12,7 @@ public class Shaman extends Droid implements CanHeal, Vulnerable {
 
     @Override
     public void heal(Vulnerable target) {
-      target.receiveHealth(45);
+      target.receiveHealth(15);
     }
 
     @Override
@@ -31,5 +31,12 @@ public class Shaman extends Droid implements CanHeal, Vulnerable {
     @Override
     public int getHealth() {
         return this.health;
+    }
+
+    @Override
+    public String toString() {
+        return "Shaman{" +
+                "health=" + health +
+                '}';
     }
 }

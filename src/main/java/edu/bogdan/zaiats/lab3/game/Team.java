@@ -17,7 +17,15 @@ public class Team {
         this.team = team;
     }
 
-    public  void interract(int idx, Droid second) {
+    public int count() {
+        return team.size();
+    }
+
+    public Droid getMember(int index) {
+        return team.get(index);
+    }
+
+    public void interact(int idx, Droid second) {
         var first = team.get(idx);
         if (!(second instanceof Vulnerable)) {
             return;
@@ -27,14 +35,16 @@ public class Team {
 
         switch (first) {
             case Imposter sus -> {
-               if (areTeammates){
-                   var chance25 = random.nextInt(4) == 0;
-                   if (chance25) {
-                      sus.attack((Vulnerable) second);
-                   } else {
-                       sus.heal((Vulnerable) second);
-                   }
-               }
+                if (areTeammates) {
+                    var chance25 = random.nextInt(4) == 0;
+                    if (chance25) {
+                        sus.attack((Vulnerable) second);
+                    } else {
+                        sus.heal((Vulnerable) second);
+                    }
+                } else {
+                    sus.attack((Vulnerable) second);
+                }
             }
             case CanAttack attacker -> {
                 if (!areTeammates) {
@@ -47,8 +57,11 @@ public class Team {
                 }
             }
             default -> {
-                return;
             }
         }
+    }
+    public void cleanCorpses(){
+        this.team = this.team.stream().filter(droid -> droid instanceof Vulnerable)
+                .filter(droid -> ((Vulnerable) droid).getHealth() > 0).toList();
     }
 }
