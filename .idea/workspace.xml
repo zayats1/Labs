@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="Lab 3 cleanup">
+    <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/base/Droid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/base/Droid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/droids/BattleDroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/droids/BattleDroid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/droids/Imposter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/droids/Imposter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/droids/Shaman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/droids/Shaman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/factory/DroidFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/factory/DroidFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,19 +66,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Labs [:edu.bogdan.zaiats.lab3.main.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lab3&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Labs [:edu.bogdan.zaiats.lab3.main.Main.main()].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "lab3",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="K2MoveDeclarationsDialog.RECENT_PACKAGE_KEY">
       <recent name="edu.bogdan.zaiats.lab3.game.droids" />
@@ -178,7 +184,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729070862750</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add rounds count">
+      <option name="closed" value="true" />
+      <created>1729071196876</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729071196876</updated>
+    </task>
+    <task id="LOCAL-00005" summary="workspace">
+      <option name="closed" value="true" />
+      <created>1729071205774</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729071205774</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +218,8 @@
     <MESSAGE value="lab3 is too hard" />
     <MESSAGE value="oh" />
     <MESSAGE value="Lab 3 cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab 3 cleanup" />
+    <MESSAGE value="add rounds count" />
+    <MESSAGE value="workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
   </component>
 </project>

@@ -10,7 +10,7 @@ import static edu.bogdan.zaiats.lab3.game.factory.DroidFactory.makeDroid;
 import static java.util.stream.IntStream.range;
 
 class Main {
-    private final static int ROUNDS = 5000000;
+    private final static int ROUNDS = 65;
 
     public static void main(String[] args) {
         var rng = new Random();
@@ -37,7 +37,8 @@ class Main {
         ));
 
         var rounds = 0;
-        for (var round : range(0, ROUNDS).toArray()) {
+        for (var round : range(1, ROUNDS + 1).toArray()) {
+            rounds = round;
             if (team1.count() == 0 || team2.count() == 0) {
                 break;
             }
@@ -46,19 +47,19 @@ class Main {
             var first = team1.getMember(first_idx);
             var second = team2.getMember(second_idx);
             team1.interact(first_idx, second);
-            team1.interact(second_idx, first);
+            team2.interact(second_idx, first);
+
             team1.interact(first_idx, team1.getMember(rng.nextInt(team1.count())));
             team2.interact(second_idx, team2.getMember(rng.nextInt(team2.count())));
 
             team1.cleanCorpses();
             team2.cleanCorpses();
 
-            rounds = round;
 
-            if (team1.count() == 0) {
+            if (team1.count() == 0 && team2.count() > 0) {
                 winner = team2;
                 break;
-            } else if (team2.count() == 0) {
+            } else if (team2.count() == 0 && team1.count() > 0) {
                 winner = team1;
                 break;
             }
@@ -77,7 +78,6 @@ class Main {
     }
 
     private static void printTeam(Team team) {
-        System.out.println(team.getName());
-        range(0, team.count()).forEachOrdered(i -> System.out.println(team.getMember(i)));
+       System.out.println(team);
     }
 }

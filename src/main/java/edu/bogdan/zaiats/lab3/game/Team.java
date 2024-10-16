@@ -6,16 +6,19 @@ import edu.bogdan.zaiats.lab3.game.base.Droid;
 import edu.bogdan.zaiats.lab3.game.base.Vulnerable;
 import edu.bogdan.zaiats.lab3.game.droids.Imposter;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import static java.util.stream.IntStream.range;
+
 public class Team {
     private final String name;
-    private List<Droid> team;
+    private ArrayList<Droid> team;
     private final Random random = new Random();
 
     public Team(String name, List<Droid> team) {
-        this.team = team;
+        this.team = new ArrayList<>(team);
         this.name = name;
     }
 
@@ -29,7 +32,7 @@ public class Team {
 
     public void interact(int idx, Droid second) {
         var first = team.get(idx);
-        if (!(second instanceof Vulnerable)) {
+        if (second == null) {
             return;
         }
 
@@ -40,22 +43,22 @@ public class Team {
                 if (areTeammates) {
                     var chance25 = random.nextInt(4) == 0;
                     if (chance25) {
-                        sus.attack((Vulnerable) second);
+                        sus.attack(second);
                     } else {
-                        sus.heal((Vulnerable) second);
+                        sus.heal(second);
                     }
                 } else {
-                    sus.attack((Vulnerable) second);
+                    sus.attack(second);
                 }
             }
             case CanAttack attacker -> {
                 if (!areTeammates) {
-                    attacker.attack((Vulnerable) second);
+                    attacker.attack(second);
                 }
             }
             case CanHeal shaman -> {
                 if (areTeammates) {
-                    shaman.heal((Vulnerable) second);
+                    shaman.heal(second);
                 }
             }
             default -> {
@@ -67,9 +70,15 @@ public class Team {
         return this.name;
     }
 
-    public void cleanCorpses() {
-        this.team = this.team.stream().filter(droid -> droid instanceof Vulnerable)
-                .filter(droid -> ((Vulnerable) droid).getHealth() > 0).toList();
+    @Override
+    public String  toString(){
+        return  this.getName() + "\n" + this.team.toString()
+                .replace("},","},\n")
+                .replace('[',' ')
+                .replace(']',' ');
     }
 
+    public void cleanCorpses() {
+            this.team.removeIf(droid -> droid.getHealth() == 0 );
+    }
 }
