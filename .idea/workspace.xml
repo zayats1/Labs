@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="oh">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/base/CanAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/base/CanAttack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/base/CanHeal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/base/CanHeal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/base/Droid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/base/Droid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/base/Vulnerable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/base/Vulnerable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/droids/BattleDroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/droids/BattleDroid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/droids/Imposter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/droids/Imposter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/droids/Shaman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/droids/Shaman.java" afterDir="false" />
@@ -26,6 +36,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -64,11 +77,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Gradle.Labs [:edu.bogdan.zaiats.lab3.main.Main.main()].executor": "Debug",
+    "Gradle.Labs [:edu.bogdan.zaiats.lab3.main.Main.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "lab3",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -186,16 +203,5 @@
     <MESSAGE value="lab3 is too hard" />
     <MESSAGE value="oh" />
     <option name="LAST_COMMIT_MESSAGE" value="oh" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/main/Main.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

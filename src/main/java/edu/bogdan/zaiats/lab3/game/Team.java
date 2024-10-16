@@ -10,11 +10,13 @@ import java.util.List;
 import java.util.Random;
 
 public class Team {
+    final String name;
     List<Droid> team;
     Random random = new Random();
 
-    public Team(List<Droid> team) {
+    public Team(String name, List<Droid> team) {
         this.team = team;
+        this.name = name;
     }
 
     public int count() {
@@ -60,8 +62,14 @@ public class Team {
             }
         }
     }
-    public void cleanCorpses(){
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void cleanCorpses() {
         this.team = this.team.stream().filter(droid -> droid instanceof Vulnerable)
                 .filter(droid -> ((Vulnerable) droid).getHealth() > 0).toList();
     }
+
 }

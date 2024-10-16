@@ -7,6 +7,7 @@ import edu.bogdan.zaiats.lab3.game.base.Vulnerable;
 public class BattleDroid extends Droid implements Vulnerable, CanAttack {
     private final int damage;
     private int health;
+
     public BattleDroid(int health, int damage) {
         this.damage = damage;
         this.health = health;
@@ -15,7 +16,7 @@ public class BattleDroid extends Droid implements Vulnerable, CanAttack {
 
     @Override
     public void attack(Vulnerable target) {
-         target.receiveDamage(this.damage);
+        target.receiveDamage(this.damage);
     }
 
     @Override
@@ -28,7 +29,7 @@ public class BattleDroid extends Droid implements Vulnerable, CanAttack {
 
     @Override
     public void receiveHealth(int health) {
-       this.health += health;
+        this.health += health;
     }
 
     @Override
