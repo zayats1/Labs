@@ -10,7 +10,7 @@ import static edu.bogdan.zaiats.lab3.game.factory.DroidFactory.makeDroid;
 import static java.util.stream.IntStream.range;
 
 class Main {
-    final static int ROUNDS = 5000000;
+    private final static int ROUNDS = 5000000;
 
     public static void main(String[] args) {
         var rng = new Random();

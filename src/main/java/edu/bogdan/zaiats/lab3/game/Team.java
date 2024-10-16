@@ -10,9 +10,9 @@ import java.util.List;
 import java.util.Random;
 
 public class Team {
-    final String name;
-    List<Droid> team;
-    Random random = new Random();
+    private final String name;
+    private List<Droid> team;
+    private final Random random = new Random();
 
     public Team(String name, List<Droid> team) {
         this.team = team;
