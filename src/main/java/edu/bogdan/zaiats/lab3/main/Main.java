@@ -36,6 +36,7 @@ class Main {
                 makeDroid(DroidTypes.BATTLE)
         ));
 
+        var rounds = 0;
         for (var round : range(0, ROUNDS).toArray()) {
             if (team1.count() == 0 || team2.count() == 0) {
                 break;
@@ -52,6 +53,8 @@ class Main {
             team1.cleanCorpses();
             team2.cleanCorpses();
 
+            rounds = round;
+
             if (team1.count() == 0) {
                 winner = team2;
                 break;
@@ -61,16 +64,16 @@ class Main {
             }
         }
 
+
+        System.out.println("Total rounds: " + rounds);
         if (winner != null) {
             System.out.println("Winner");
-            System.out.println(winner);
             printTeam(winner);
         } else {
             System.out.println("Draw");
             printTeam(team1);
             printTeam(team2);
         }
-
     }
 
     private static void printTeam(Team team) {
