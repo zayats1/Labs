@@ -42,15 +42,15 @@ class Main {
             if (team1.count() == 0 || team2.count() == 0) {
                 break;
             }
-            var first_idx = rng.nextInt(team1.count());
-            var second_idx = rng.nextInt(team2.count());
-            var first = team1.getMember(first_idx);
-            var second = team2.getMember(second_idx);
-            team1.interact(first_idx, second);
-            team2.interact(second_idx, first);
+            var firstIdx = rng.nextInt(team1.count());
+            var secondIdx = rng.nextInt(team2.count());
+            var first = team1.getMember(firstIdx);
+            var second = team2.getMember(secondIdx);
+            team1.interact(firstIdx, second);
+            team2.interact(secondIdx, first);
 
-            team1.interact(first_idx, team1.getMember(rng.nextInt(team1.count())));
-            team2.interact(second_idx, team2.getMember(rng.nextInt(team2.count())));
+            team1.interact(firstIdx, team1.getMember(rng.nextInt(team1.count())));
+            team2.interact(secondIdx, team2.getMember(rng.nextInt(team2.count())));
 
             team1.cleanCorpses();
             team2.cleanCorpses();

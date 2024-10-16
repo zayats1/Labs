@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="Fix bug with health and clean up code">
+    <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="Final version.&#10;Fixed: Battle droids fight while they are dead.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/droids/BattleDroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/droids/BattleDroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/factory/DroidFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/game/factory/DroidFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bogdan_zaiats_report_lab3.docx" beforeDir="false" afterPath="$PROJECT_DIR$/bogdan_zaiats_report_lab3.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +71,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -205,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729106269727</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Final version.&#10;Fixed: Battle droids fight while they are dead.">
+      <option name="closed" value="true" />
+      <created>1729106728429</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729106728429</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +232,7 @@
     <MESSAGE value="add rounds count" />
     <MESSAGE value="workspace" />
     <MESSAGE value="Fix bug with health and clean up code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix bug with health and clean up code" />
+    <MESSAGE value="Final version.&#10;Fixed: Battle droids fight while they are dead." />
+    <option name="LAST_COMMIT_MESSAGE" value="Final version.&#10;Fixed: Battle droids fight while they are dead." />
   </component>
 </project>
