@@ -79,6 +79,6 @@ public class Team {
     }
 
     public void cleanCorpses() {
-            this.team.removeIf(droid -> droid.getHealth() == 0 );
+            this.team.removeIf(droid -> droid.getHealth() <= 0 );
     }
 }

@@ -10,7 +10,7 @@ import static edu.bogdan.zaiats.lab3.game.factory.DroidFactory.makeDroid;
 import static java.util.stream.IntStream.range;
 
 class Main {
-    private final static int ROUNDS = 65;
+    private final static int ROUNDS = 69;
 
     public static void main(String[] args) {
         var rng = new Random();
@@ -68,7 +68,7 @@ class Main {
 
         System.out.println("Total rounds: " + rounds);
         if (winner != null) {
-            System.out.println("Winner");
+            System.out.print("Winner: ");
             printTeam(winner);
         } else {
             System.out.println("Draw");
