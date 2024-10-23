@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="Final version.&#10;Fixed: Battle droids fight while they are dead.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bogdan_zaiats_report_lab3.docx" beforeDir="false" afterPath="$PROJECT_DIR$/bogdan_zaiats_report_lab3.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab3/main/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="Done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,7 +207,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729106728429</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Define camelCase">
+      <option name="closed" value="true" />
+      <created>1729108173081</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729108173081</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Done">
+      <option name="closed" value="true" />
+      <created>1729108213705</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1729108213705</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,6 +245,8 @@
     <MESSAGE value="workspace" />
     <MESSAGE value="Fix bug with health and clean up code" />
     <MESSAGE value="Final version.&#10;Fixed: Battle droids fight while they are dead." />
-    <option name="LAST_COMMIT_MESSAGE" value="Final version.&#10;Fixed: Battle droids fight while they are dead." />
+    <MESSAGE value="Define camelCase" />
+    <MESSAGE value="Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done" />
   </component>
 </project>
