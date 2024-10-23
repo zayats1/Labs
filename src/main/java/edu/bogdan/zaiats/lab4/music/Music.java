@@ -1,16 +1,12 @@
 package edu.bogdan.zaiats.lab4.music;
 
-public record Music(String name, String album, String author,String style, int duration) {
+public record Music(String name, String album, String author,String duration,String style){
     @Override
     public String toString() {
-        var duration_s  = duration % 60;
-        var duration_m = duration/60 - duration_s;
-        return "Music{" +
-                "name='" + name + '\'' +
+        return  "name='" + name + '\'' +
                 ", album='" + album + '\'' +
                 ", author='" + author + '\'' +
-                ", style='" + style + '\'' +
-                ", duration=" + duration_m + ":" + duration_s +
-                '}';
+                ", duration='" + duration + '\'' +
+                ", style='" + style + '\'';
     }
 }
