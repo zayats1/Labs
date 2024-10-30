@@ -1,6 +1,8 @@
 package edu.bogdan.zaiats.lab4.main;
 
+import edu.bogdan.zaiats.lab4.commands.Add;
 import edu.bogdan.zaiats.lab4.commands.Command;
+import edu.bogdan.zaiats.lab4.commands.Help;
 import edu.bogdan.zaiats.lab4.commands.Read;
 import edu.bogdan.zaiats.lab4.console.Menu;
 import edu.bogdan.zaiats.lab4.console.MusicCsvParser;
@@ -8,6 +10,7 @@ import edu.bogdan.zaiats.lab4.console.Reader;
 
 import java.io.FileNotFoundException;
 import java.util.Arrays;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -30,8 +33,9 @@ class Main {
 //        lines.forEach(
 //                line -> System.out.println(MusicCsvParser.fromLine(line))
 //        );
-        var menu = new Menu(Map.of("Read",new Read()));
+        var menu = new Menu(new Read(),new Add(),new Help());
 
+        System.out.println("Commands");
         System.out.println(menu.getItems());
     }
 }

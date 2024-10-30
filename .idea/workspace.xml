@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="lab4 got its shape">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/commands/Add.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/commands/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/commands/Help.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/commands/Read.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bogdan_zaiats_report_lab4.odt" beforeDir="false" afterPath="$PROJECT_DIR$/bogdan_zaiats_report_lab4.odt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/console/Comands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/console/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4ClassDiagram.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/lab4ClassDiagram.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/console/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/console/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

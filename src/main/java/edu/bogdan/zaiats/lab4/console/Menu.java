@@ -2,22 +2,32 @@ package edu.bogdan.zaiats.lab4.console;
 
 import edu.bogdan.zaiats.lab4.commands.Command;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 public class Menu {
-    Map<String,Command> commands;
+    LinkedHashMap <String,Command> commands;
 
-    public Menu(Map<String, Command> commands) {
-        this.commands = commands;
+    public Menu (Command ... p) {
+        this.commands = new LinkedHashMap<String, Command>() {{
+            for (var command : p) {
+                put(command.getClass().getSimpleName(),command);
+            }
+        }};
     }
 
-    public List<String> getItems(){
+    public String getItems(){
         var names = new ArrayList<String>();
-        commands.forEach((name,_)->  names.add(name));
-        return names;
+        var context = new Object() {
+            static int pos = 1;
+        };
+        commands.forEach((name,_)->
+                {
+                    names.add(context.pos + " " + name);
+                    context.pos += 1;
+                }
+        );
+
+        return names.toString().replaceAll(",","\n").replaceAll("[\\[\\]]","");
     }
 
     public Optional<Command> get(String name){
