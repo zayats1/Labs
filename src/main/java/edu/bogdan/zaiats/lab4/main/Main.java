@@ -9,10 +9,7 @@ import edu.bogdan.zaiats.lab4.console.MusicCsvParser;
 import edu.bogdan.zaiats.lab4.console.Reader;
 
 import java.io.FileNotFoundException;
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 class Main {
     public static void main(String[] args) {

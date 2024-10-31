@@ -5,10 +5,10 @@ import edu.bogdan.zaiats.lab4.commands.Command;
 import java.util.*;
 
 public class Menu {
-    LinkedHashMap <String,Command> commands;
+    HashMap <String,Command> commands;
 
     public Menu (Command ... p) {
-        this.commands = new LinkedHashMap<String, Command>() {{
+        this.commands = new HashMap<String, Command>() {{
             for (var command : p) {
                 put(command.getClass().getSimpleName(),command);
             }
