@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="lab4 got its shape">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bogdan_zaiats_report_lab4.odt" beforeDir="false" afterPath="$PROJECT_DIR$/bogdan_zaiats_report_lab4.odt" afterDir="false" />
-    </list>
+    <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="lab 4 - 5 done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729661463626</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="lab 4 - 5 done">
+      <option name="closed" value="true" />
+      <created>1730836414540</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1730836414540</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,7 +253,8 @@
     <MESSAGE value="Define camelCase" />
     <MESSAGE value="Done" />
     <MESSAGE value="lab4 got its shape" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab4 got its shape" />
+    <MESSAGE value="lab 4 - 5 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab 4 - 5 done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
