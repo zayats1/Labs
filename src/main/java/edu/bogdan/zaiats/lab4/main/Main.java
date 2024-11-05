@@ -24,9 +24,11 @@ class Main {
 //        lines.forEach(
 //                line -> System.out.println(MusicCsvParser.fromLine(line))
 //        );
-        var menu = new Menu(new Read(),new Add(),new Help());
+        var menu = new Menu(new Read(), new Add(), new Help());
 
         System.out.println("Commands");
         System.out.println(menu.getItems());
+
+
     }
 }

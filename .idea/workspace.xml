@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="lab 4 - 5 done">
+    <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="Command has now getName method;">
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab4/commands/CommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab4/console/MenuTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bogdan_zaiats_report_lab4-5.odt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/console/MusicCsvParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/parser/MusicCsvParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/console/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/console/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab4/console/MusicCsvParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab4/console/MusicCsvParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/music/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/music/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/parser/MusicCsvParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab4/parser/MusicCsvParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,14 +48,19 @@
       <list>
         <option value="Kotlin Class" />
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="GradleRunConfiguration" name="MusicCsvParserTest.fromLine" />
+    </enabled-run-configurations>
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -69,6 +76,10 @@
     "Gradle.CsvParserTest.fromLine.executor": "Run",
     "Gradle.Labs [:edu.bogdan.zaiats.lab3.main.Main.main()].executor": "Run",
     "Gradle.Labs [:edu.bogdan.zaiats.lab4.main.Main.main()].executor": "Run",
+    "Gradle.MenuTest.executor": "Run",
+    "Gradle.MenuTest.get.executor": "Run",
+    "Gradle.MenuTest.getItems.executor": "Run",
+    "Gradle.MenuTest.testToString.executor": "Run",
     "Gradle.MusicCsvParserTest.fromLine.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -88,16 +99,16 @@
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="edu.bogdan.zaiats.lab4.console" />
+      <recent name="edu.bogdan.zaiats.lab4.commands" />
     </key>
     <key name="K2MoveDeclarationsDialog.RECENT_PACKAGE_KEY">
       <recent name="edu.bogdan.zaiats.lab3.game.droids" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MusicCsvParserTest.fromLine">
+  <component name="RunManager" selected="Gradle.MenuTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.bogdan.zaiats.lab4.main.Main" />
       <module name="Labs.main" />
-      <option name="PROGRAM_PARAMETERS" value="file.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="edu.bogdan.zaiats.lab4.main.*" />
@@ -108,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CsvParserTest.fromLine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MenuTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -121,7 +132,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;edu.bogdan.zaiats.lab4.console.CsvParserTest.fromLine&quot;" />
+            <option value="&quot;edu.bogdan.zaiats.lab4.console.MenuTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -132,7 +143,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MusicCsvParserTest.fromLine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MenuTest.get" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -145,7 +156,55 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;edu.bogdan.zaiats.lab4.console.MusicCsvParserTest.fromLine&quot;" />
+            <option value="&quot;edu.bogdan.zaiats.lab4.console.MenuTest.get&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MenuTest.getItems" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;edu.bogdan.zaiats.lab4.console.MenuTest.getItems&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MenuTest.testToString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;edu.bogdan.zaiats.lab4.console.MenuTest.testToString&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -158,8 +217,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MusicCsvParserTest.fromLine" />
-        <item itemvalue="Gradle.CsvParserTest.fromLine" />
+        <item itemvalue="Gradle.MenuTest" />
+        <item itemvalue="Gradle.MenuTest.getItems" />
+        <item itemvalue="Gradle.MenuTest.testToString" />
+        <item itemvalue="Gradle.MenuTest.get" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +322,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730836414540</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="lab 6 begin">
+      <option name="closed" value="true" />
+      <created>1730837193722</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1730837193722</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Command has now getName method;">
+      <option name="closed" value="true" />
+      <created>1730840095310</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1730840095310</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,7 +364,9 @@
     <MESSAGE value="Done" />
     <MESSAGE value="lab4 got its shape" />
     <MESSAGE value="lab 4 - 5 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab 4 - 5 done" />
+    <MESSAGE value="lab 6 begin" />
+    <MESSAGE value="Command has now getName method;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Command has now getName method;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -299,6 +379,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab4/console/MenuTest.java</url>
+          <line>22</line>
+          <properties class="edu.bogdan.zaiats.lab4.console.MenuTest" method="get">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab4/console/MusicCsvParserTest.java</url>
