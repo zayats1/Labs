@@ -1,15 +1,9 @@
 package edu.bogdan.zaiats.lab4.main;
 
 import edu.bogdan.zaiats.lab4.commands.Add;
-import edu.bogdan.zaiats.lab4.commands.Command;
 import edu.bogdan.zaiats.lab4.commands.Help;
 import edu.bogdan.zaiats.lab4.commands.Read;
 import edu.bogdan.zaiats.lab4.console.Menu;
-import edu.bogdan.zaiats.lab4.console.MusicCsvParser;
-import edu.bogdan.zaiats.lab4.console.Reader;
-
-import java.io.FileNotFoundException;
-import java.util.*;
 
 class Main {
     public static void main(String[] args) {

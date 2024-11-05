@@ -1,4 +1,4 @@
-package edu.bogdan.zaiats.lab4.console;
+package edu.bogdan.zaiats.lab4.parser;
 
 
 import edu.bogdan.zaiats.lab4.music.Music;

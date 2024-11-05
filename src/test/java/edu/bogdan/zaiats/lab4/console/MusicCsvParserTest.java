@@ -1,6 +1,7 @@
 package edu.bogdan.zaiats.lab4.console;
 
 import edu.bogdan.zaiats.lab4.music.Music;
+import edu.bogdan.zaiats.lab4.parser.MusicCsvParser;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -15,5 +16,14 @@ class MusicCsvParserTest {
         assertEquals(music, new Music(
                 "Foreword","Meteora","Linkin park","0:13","rock"
         ));
+    }
+
+    @Test
+    void notParsed(){
+        var line = "Foreword,Meteora,Linkin park,rock";
+
+        var music = MusicCsvParser.fromLine(line);
+
+        assertNull(music);
     }
 }
