@@ -8,13 +8,16 @@ public class Menu {
     HashMap <String,Command> commands;
 
     public Menu (Command ... p) {
-        this.commands = new LinkedHashMap<String, Command>() {{
+         this.init(p);
+    }
+
+    protected void init(Command ... p) {
+        this.commands = new LinkedHashMap<>() {{
             for (var command : p) {
-                put(command.getClass().getSimpleName(),command);
+                put(command.getClass().getSimpleName(), command);
             }
         }};
     }
-
     public String getItems(){
         var names = new ArrayList<String>();
         var context = new Object() {
