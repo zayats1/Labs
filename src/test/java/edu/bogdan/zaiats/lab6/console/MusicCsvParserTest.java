@@ -1,7 +1,7 @@
-package edu.bogdan.zaiats.lab4.console;
+package edu.bogdan.zaiats.lab6.console;
 
-import edu.bogdan.zaiats.lab4.music.Music;
-import edu.bogdan.zaiats.lab4.parser.MusicCsvParser;
+import edu.bogdan.zaiats.lab6.music.Music;
+import edu.bogdan.zaiats.lab6.parser.MusicCsvParser;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,7 +1,7 @@
-package edu.bogdan.zaiats.lab4.parser;
+package edu.bogdan.zaiats.lab6.parser;
 
 
-import edu.bogdan.zaiats.lab4.music.Music;
+import edu.bogdan.zaiats.lab6.music.Music;
 
 public class MusicCsvParser {
     public static Music fromLine(String line) {

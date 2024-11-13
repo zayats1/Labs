@@ -1,4 +1,4 @@
-package edu.bogdan.zaiats.lab4.commands;
+package edu.bogdan.zaiats.lab6.commands;
 
 public class Help implements Command {
     @Override

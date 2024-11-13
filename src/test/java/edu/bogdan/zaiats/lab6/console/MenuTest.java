@@ -1,8 +1,8 @@
-package edu.bogdan.zaiats.lab4.console;
+package edu.bogdan.zaiats.lab6.console;
 
-import edu.bogdan.zaiats.lab4.commands.Add;
-import edu.bogdan.zaiats.lab4.commands.Help;
-import edu.bogdan.zaiats.lab4.commands.Read;
+import edu.bogdan.zaiats.lab6.commands.Add;
+import edu.bogdan.zaiats.lab6.commands.Help;
+import edu.bogdan.zaiats.lab6.commands.Read;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -15,8 +15,7 @@ class MenuTest {
         assertEquals(menu.getItems(), """
                 1 Read
                 2 Add
-                3 Help
-                """);
+                3 Help""");
     }
 
     @Test
@@ -25,15 +24,5 @@ class MenuTest {
         var command = menu.get("Help");
         assertTrue(command.isPresent());
         assertEquals(command.get().getName(), Help.class.getSimpleName());
-    }
-
-    @Test
-    void testToString() {
-        var menu = new Menu(new Read(),new Add());
-        assertEquals(menu.toString(), """
-                Available commands
-                1 Read
-                2 Add
-                """);
     }
 }

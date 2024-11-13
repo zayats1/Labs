@@ -1,4 +1,4 @@
-package edu.bogdan.zaiats.lab4.console;
+package edu.bogdan.zaiats.lab6.console;
 
 import java.io.File;
 import java.io.FileNotFoundException;
