@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Reader {
     public static List<String> readFile(String filename) throws FileNotFoundException {
         var lines = new ArrayList<String>();
-        File myObj = new File("filename.txt");
+        File myObj = new File(filename);
         Scanner myReader = new Scanner(myObj);
         while (myReader.hasNextLine()) {
             String line = myReader.nextLine();

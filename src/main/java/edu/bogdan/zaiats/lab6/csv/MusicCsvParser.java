@@ -1,4 +1,4 @@
-package edu.bogdan.zaiats.lab6.parser;
+package edu.bogdan.zaiats.lab6.csv;
 
 
 import edu.bogdan.zaiats.lab6.music.Music;
