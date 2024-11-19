@@ -4,23 +4,25 @@ import edu.bogdan.zaiats.lab6.commands.Add;
 import edu.bogdan.zaiats.lab6.commands.Help;
 import edu.bogdan.zaiats.lab6.commands.Read;
 import org.junit.jupiter.api.Test;
-
+import edu.bogdan.zaiats.lab6.service.MusicService;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MenuTest {
 
     @Test
     void getItems() {
-        var menu = new Menu(new Read(),new Add(),new Help());
-        assertEquals(menu.getItems(), """
+        var service = new MusicService();
+        var menu = new Menu(new Read(service),new Add(service));
+        assertEquals("""
                 1 Read
                 2 Add
-                3 Help""");
+                3 Help
+                4 Quit""", menu.getItems());
     }
 
     @Test
     void get() {
-        var menu = new Menu(new Help());
+        var menu = new Menu();
         var command = menu.get("Help");
         assertTrue(command.isPresent());
         assertEquals(command.get().getName(), Help.class.getSimpleName());

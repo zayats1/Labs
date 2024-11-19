@@ -8,7 +8,7 @@ class CommandTest {
 
     @Test
     void getName() {
-        var command = new Help();
-        assertEquals(command.getName(), Help.class.getSimpleName());
+        var command = new Quit();
+        assertEquals(command.getName(), Quit.class.getSimpleName());
     }
 }
