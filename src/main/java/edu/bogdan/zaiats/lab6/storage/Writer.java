@@ -9,8 +9,9 @@ import java.io.FileWriter;
 public class Writer {
     public boolean write(String filename, String data)  {
         try {
-            var writer =  new FileWriter(filename);
-            writer.write("sss");
+            try (var writer = new FileWriter(filename)) {
+                writer.write(data);
+            }
         } catch (IOException e){
             System.out.println(e.toString());
             return  false;
