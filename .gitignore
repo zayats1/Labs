@@ -46,3 +46,5 @@ bin/
 *.zip
 *.tar.gz
 .venv
+!/.idea/misc.xml
+!/.idea/workspace.xml
