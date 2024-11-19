@@ -2,7 +2,6 @@ package edu.bogdan.zaiats.lab6.main;
 
 import edu.bogdan.zaiats.lab6.commands.Add;
 import edu.bogdan.zaiats.lab6.commands.Command;
-import edu.bogdan.zaiats.lab6.commands.Help;
 import edu.bogdan.zaiats.lab6.commands.Read;
 import edu.bogdan.zaiats.lab6.console.Menu;
 import edu.bogdan.zaiats.lab6.service.MusicService;
