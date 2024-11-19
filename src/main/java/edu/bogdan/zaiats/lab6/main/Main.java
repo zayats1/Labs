@@ -20,7 +20,7 @@ class Main {
 
 
         help.run();
-        var tryAgain = false;
+        var tryAgain = true;
         do {
             var console = new Scanner(System.in);
 

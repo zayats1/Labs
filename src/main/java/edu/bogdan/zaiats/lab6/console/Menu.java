@@ -45,6 +45,10 @@ public class Menu {
     }
 
     public Optional<Command> get(String name){
-       return Optional.of(commands.get(name));
+          if (commands.containsKey(name)) {
+                return Optional.of(commands.get(name));
+            } else {
+              return Optional.empty();
+          }
     }
 }
