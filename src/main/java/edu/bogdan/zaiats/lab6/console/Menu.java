@@ -26,15 +26,10 @@ public class Menu {
     }
     public String getItems(){
         var names = new ArrayList<String>();
-        var context = new Object() {
-            int pos = 1;
-        };
-        commands.forEach((name,_)->
-                {
-                    names.add(context.pos + " " + name);
-                    context.pos += 1;
-                }
-        );
+        for (Map.Entry<String, Command> entry : commands.entrySet()) {
+            String name = entry.getKey();
+            names.add(name);
+        }
         // .replaceAll(",","\n").replaceAll("[\\[\\]]","");
        return  String.join("\n",names);
     }

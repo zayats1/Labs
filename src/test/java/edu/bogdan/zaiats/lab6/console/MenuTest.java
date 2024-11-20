@@ -14,10 +14,10 @@ class MenuTest {
         var service = new MusicService();
         var menu = new Menu(new Read(service),new Add(service));
         assertEquals("""
-                1 Read
-                2 Add
-                3 Help
-                4 Quit""", menu.getItems());
+               Read
+               Add
+               Help
+               Quit""", menu.getItems());
     }
 
     @Test
