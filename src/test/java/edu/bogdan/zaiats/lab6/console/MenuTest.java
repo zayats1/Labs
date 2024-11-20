@@ -1,7 +1,6 @@
 package edu.bogdan.zaiats.lab6.console;
 
 import edu.bogdan.zaiats.lab6.commands.Add;
-import edu.bogdan.zaiats.lab6.commands.Help;
 import edu.bogdan.zaiats.lab6.commands.Read;
 import org.junit.jupiter.api.Test;
 import edu.bogdan.zaiats.lab6.service.MusicService;
@@ -16,15 +15,19 @@ class MenuTest {
         assertEquals("""
                Read
                Add
-               Help
-               Quit""", menu.getItems());
+               """, menu.getItems());
     }
 
     @Test
     void get() {
         var menu = new Menu();
         var command = menu.get("Help");
-        assertTrue(command.isPresent());
-        assertEquals(command.get().getName(), Help.class.getSimpleName());
+        assertFalse(command.isPresent());
+
+        var service = new MusicService();
+        var newMenu = new Menu(new Add(service));
+        var addCommand = newMenu.get("Add");
+        assertTrue(addCommand.isPresent());
+        assertEquals(addCommand.get().getName(), Add.class.getSimpleName());
     }
 }

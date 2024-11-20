@@ -16,12 +16,12 @@ class Main {
         Runnable help = () ->{
            System.out.println("Available Commands");
            System.out.println(menu);
+           System.out.println("Quit\n Help");
        };
 
 
         help.run();
-        var tryAgain = true;
-        do {
+        while(true) {
             var console = new Scanner(System.in);
 
             var commandName = console.nextLine();
@@ -31,13 +31,15 @@ class Main {
                 continue;
             }
 
+            if (commandName.equals("Quit")){
+                 System.exit(1);
+            }
+
             var command = menu.get(commandName);
 
-            command.ifPresentOrElse(Command::execute, () -> {
-                System.out.print("Try again\n To see commands type Help\n");
-            });
+            command.ifPresentOrElse(Command::execute, () -> System.out.print("Try again\n To see commands type Help\n"));
 
-        } while(tryAgain);
+        }
 
     }
 }
