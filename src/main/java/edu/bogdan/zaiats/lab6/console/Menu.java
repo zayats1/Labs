@@ -18,6 +18,9 @@ public class Menu {
             }
         }};
     }
+ // Todo put service to menu
+    // Todo help and Quit to menu
+    // Todo loop put in menu
     public String getItems(){
         var names = new ArrayList<String>();
         for (Map.Entry<String, Command> entry : commands.entrySet()) {
