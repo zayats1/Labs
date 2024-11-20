@@ -13,14 +13,14 @@ class MusicCsvParserTest {
 
         var music = MusicCsvParser.fromLine(line);
 
-        assertEquals(music, new Music(
+        assertEquals(new Music(
                 "Foreword","Meteora","Linkin park","0:13","rock"
-        ));
+        ), music);
     }
 
     @Test
     void notParsed(){
-        var line = "Foreword,Meteora,Linkin park,rock";
+        var line = "Foreword,Meteor,Linkin park,rock";
 
         var music = MusicCsvParser.fromLine(line);
 
