@@ -16,7 +16,7 @@ class Main {
         Runnable help = () ->{
            System.out.println("Available Commands");
            System.out.println(menu);
-           System.out.println("Quit\n Help");
+           System.out.println("Quit\nHelp");
        };
 
 

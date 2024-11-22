@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="add Mokito for testing user input">
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab6/console/MusicReaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="Make music Reader testable">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/console/MusicReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/console/MusicReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/service/MusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/service/MusicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab6/console/MenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab6/console/MenuTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,8 +110,8 @@
       <recent name="edu.bogdan.zaiats.lab3.game.droids" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MusicReaderTest">
-    <configuration name="MenuTest.get" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.MenuTest.getItems">
+    <configuration name="MenuTest.getItems" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -126,7 +124,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;edu.bogdan.zaiats.lab6.console.MenuTest.get&quot;" />
+            <option value="&quot;edu.bogdan.zaiats.lab6.console.MenuTest.getItems&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -236,15 +234,15 @@
       <item itemvalue="Gradle.MusicReaderTest.read" />
       <item itemvalue="Gradle.Tests in 'Labs.test'" />
       <item itemvalue="Gradle.MusicCsvParserTest.fromLine" />
-      <item itemvalue="Gradle.MenuTest.get" />
+      <item itemvalue="Gradle.MenuTest.getItems" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MenuTest.getItems" />
         <item itemvalue="Gradle.MusicReaderTest" />
         <item itemvalue="Gradle.MusicReaderTest.read" />
         <item itemvalue="Gradle.Tests in 'Labs.test'" />
         <item itemvalue="Gradle.MusicCsvParserTest.fromLine" />
-        <item itemvalue="Gradle.MenuTest.get" />
       </list>
     </recent_temporary>
   </component>
@@ -417,7 +415,31 @@
       <option name="project" value="LOCAL" />
       <updated>1732269234169</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="lab6">
+      <option name="closed" value="true" />
+      <created>1732271344623</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1732271344623</updated>
+    </task>
+    <task id="LOCAL-00022" summary="lab6">
+      <option name="closed" value="true" />
+      <created>1732271347838</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1732271347838</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Make music Reader testable">
+      <option name="closed" value="true" />
+      <created>1732271365541</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1732271365541</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -453,7 +475,9 @@
     <MESSAGE value="Rename ConsoleReader to MusicReader" />
     <MESSAGE value="flip actual and expected in MusicCsvParserTest" />
     <MESSAGE value="add Mokito for testing user input" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Mokito for testing user input" />
+    <MESSAGE value="lab6" />
+    <MESSAGE value="Make music Reader testable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make music Reader testable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

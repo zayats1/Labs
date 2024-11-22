@@ -12,10 +12,8 @@ class MenuTest {
     void getItems() {
         var service = new MusicService();
         var menu = new Menu(new Read(service),new Add(service));
-        assertEquals("""
-               Read
-               Add
-               """, menu.getItems());
+        assertEquals("Read\nAdd"
+               , menu.getItems());
     }
 
     @Test
