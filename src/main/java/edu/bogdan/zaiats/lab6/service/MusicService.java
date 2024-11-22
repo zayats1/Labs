@@ -14,7 +14,8 @@ public class MusicService {
           music.ifPresent(records::add);
    }
 
-   public String Read() {
-       return String.join("\n",records.toString());
+   public void read() {
+       var records = String.join("\n",this.records.toString());
+       System.out.println(records);
    }
 }

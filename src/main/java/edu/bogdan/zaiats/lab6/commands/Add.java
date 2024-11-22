@@ -9,6 +9,6 @@ public class Add extends  MusicServiceCommand {
 
     @Override
     public void execute() {
-        // TODO: 29.10.24
+        this.service.addRecord();
     }
 }

@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="Make music Reader testable">
+    <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="fix small bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/commands/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/commands/Add.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/commands/Read.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/commands/Read.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/service/MusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/service/MusicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab6/console/MenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab6/console/MenuTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +110,7 @@
       <recent name="edu.bogdan.zaiats.lab3.game.droids" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MenuTest.getItems">
+  <component name="RunManager">
     <configuration name="MenuTest.getItems" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -439,7 +439,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732271365541</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="start to implementing Music Service">
+      <option name="closed" value="true" />
+      <created>1732272118763</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1732272118763</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fix small bugs">
+      <option name="closed" value="true" />
+      <created>1732272141388</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1732272141388</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -477,7 +493,9 @@
     <MESSAGE value="add Mokito for testing user input" />
     <MESSAGE value="lab6" />
     <MESSAGE value="Make music Reader testable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make music Reader testable" />
+    <MESSAGE value="start to implementing Music Service" />
+    <MESSAGE value="fix small bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix small bugs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
