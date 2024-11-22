@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="fix small bugs">
+    <list default="true" id="0be48df9-b3b2-4c24-b19a-3846710a6608" name="Changes" comment="first implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/commands/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/commands/Add.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/commands/Read.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/commands/Read.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/service/MusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/service/MusicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab6/console/MusicReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab6/console/MusicReaderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,34 +67,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.CsvParserTest.fromLine.executor": "Run",
-    "Gradle.Labs [:edu.bogdan.zaiats.lab3.main.Main.main()].executor": "Run",
-    "Gradle.Labs [:edu.bogdan.zaiats.lab4.main.Main.main()].executor": "Run",
-    "Gradle.Labs [:edu.bogdan.zaiats.lab6.main.Main.main()].executor": "Run",
-    "Gradle.MenuTest.executor": "Run",
-    "Gradle.MenuTest.get.executor": "Run",
-    "Gradle.MenuTest.getItems.executor": "Run",
-    "Gradle.MenuTest.testToString.executor": "Run",
-    "Gradle.MusicCsvParserTest.fromLine.executor": "Run",
-    "Gradle.MusicReaderTest.executor": "Run",
-    "Gradle.MusicReaderTest.read.executor": "Run",
-    "Gradle.Tests in 'Labs.test'.executor": "Coverage",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "lab6",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/nerd/Studying/Labs",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.CsvParserTest.fromLine.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Labs [:edu.bogdan.zaiats.lab3.main.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Labs [:edu.bogdan.zaiats.lab4.main.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Labs [:edu.bogdan.zaiats.lab6.main.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MenuTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MenuTest.get.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MenuTest.getItems.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MenuTest.testToString.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MusicCsvParserTest.fromLine.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MusicReaderTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MusicReaderTest.read.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'Labs.test'.executor&quot;: &quot;Coverage&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab6&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/nerd/Studying/Labs&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -110,7 +108,7 @@
       <recent name="edu.bogdan.zaiats.lab3.game.droids" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.MusicReaderTest">
     <configuration name="MenuTest.getItems" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -455,7 +453,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732272141388</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="first implementation">
+      <option name="closed" value="true" />
+      <created>1732272406691</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1732272406691</updated>
+    </task>
+    <task id="LOCAL-00027" summary="first implementation">
+      <option name="closed" value="true" />
+      <created>1732272431358</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1732272431358</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -470,7 +484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lab3 is too hard" />
     <MESSAGE value="oh" />
     <MESSAGE value="Lab 3 cleanup" />
     <MESSAGE value="add rounds count" />
@@ -495,7 +508,8 @@
     <MESSAGE value="Make music Reader testable" />
     <MESSAGE value="start to implementing Music Service" />
     <MESSAGE value="fix small bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix small bugs" />
+    <MESSAGE value="first implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="first implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -506,7 +520,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab6/console/MusicReaderTest.java</url>
-          <line>12</line>
+          <line>14</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
