@@ -14,7 +14,7 @@ dependencies {
     implementation("org.jetbrains:annotations:24.0.0")
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
-    implementation(kotlin("stdlib-jdk8"))
+    testImplementation ("org.mockito:mockito-core:3.+" )
 }
 
 tasks.test {
