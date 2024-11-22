@@ -1,9 +1,20 @@
 package edu.bogdan.zaiats.lab6.service;
 
+import edu.bogdan.zaiats.lab6.console.MusicReader;
 import edu.bogdan.zaiats.lab6.music.Music;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class MusicService {
-   public  boolean addRecord(Music record){
-       return false;
+
+    private  final List<Music> records = new LinkedList<>();
+   public  void addRecord(){
+          var music = MusicReader.read(System.in);
+          music.ifPresent(records::add);
+   }
+
+   public String Read() {
+       return String.join("\n",records.toString());
    }
 }
