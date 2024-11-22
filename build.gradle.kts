@@ -1,10 +1,12 @@
+import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
+
 plugins {
     id("java")
     kotlin("jvm")
 }
 
 group = "edu.bogdan.zaiats"
-version = "1.0-SNAPSHOT"
+version = "Lab6"
 
 repositories {
     mavenCentral()
@@ -21,5 +23,5 @@ tasks.test {
     useJUnitPlatform()
 }
 kotlin {
-    jvmToolchain(22)
+    jvmToolchain(23)
 }
