@@ -1,7 +1,6 @@
-package edu.bogdan.zaiats.lab6.console;
+package edu.bogdan.zaiats.lab6.csv;
 
 import edu.bogdan.zaiats.lab6.music.Music;
-import edu.bogdan.zaiats.lab6.csv.MusicCsvParser;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -25,5 +24,14 @@ class MusicCsvParserTest {
         var music = MusicCsvParser.fromLine(line);
 
         assertNull(music);
+    }
+
+    @Test
+    void toLine() {
+        var music = new Music(
+                "Foreword","Meteora","Linkin park","0:13","rock"
+        );
+        var line = "Foreword,Meteora,Linkin park,0:13,rock";
+        assertEquals(line,MusicCsvParser.toLine(music));
     }
 }

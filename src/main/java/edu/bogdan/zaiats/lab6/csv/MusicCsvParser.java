@@ -17,4 +17,13 @@ public class MusicCsvParser {
                 data[4]
         );
     }
+
+    public static String toLine(Music music) {
+        return String.join(",",
+                music.name(),
+                music.album(),
+                music.author(),
+                music.duration(),
+                music.style());
+    }
 }
