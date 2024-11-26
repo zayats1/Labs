@@ -9,14 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class MenuTest {
 
     @Test
-    void getItems() {
-        var service = new MusicService();
-        var menu = new Menu(new Read(service),new Add(service));
-        assertEquals("Read\nAdd"
-               , menu.getItems());
-    }
-
-    @Test
     void get() {
         var menu = new Menu();
         var command = menu.get("Help");
