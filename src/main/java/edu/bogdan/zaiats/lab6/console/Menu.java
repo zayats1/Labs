@@ -44,7 +44,7 @@ public class Menu  {
     }
 
 public String help(){
-        return "Available Commands" + "\n" + "Quit" + "\n" + "Help" + "\n"  + String.join("\n", this.getNames());
+        return "Available Commands" + "\n" + "Quit" + "\n" + "Help" + "\n"  + String.join("\n", this.getNames()) +  "\n";
 
 }
 public void show(Scanner console, PrintStream out) {
