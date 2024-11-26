@@ -35,16 +35,25 @@ public class MusicService {
            System.out.println("The box of records is empty!\n Put some melodies in it");
            return;
        }
-       System.out.println(found);
+
+       var oneliner = found.stream().map(music -> String.join("  ",
+               music.name(),
+               music.album(),
+               music.author(),
+               music.duration(),
+               music.style())).toList();
+
+       var readable = String.join("\n",oneliner);
+       System.out.println(String.join("\n",readable));
    }
 
 
    public void removeRecord(){
-       System.out.println("Which music? you want to read");
+       System.out.println("Which music do you want to remove?");
+       System.out.println("Select music");
        var scanner = new Scanner(System.in);
        var predicate = scanner.nextLine();
        var found = findRecord(predicate,this.records);
-       System.out.println("Select music");
        for (var music : found){
            System.out.println(found.indexOf(music) + " " + music);
        }
@@ -66,7 +75,7 @@ public class MusicService {
                   records.add(music);
               }
             }
-
+           System.out.println("Loaded");
         } catch (FileNotFoundException e) {
            System.out.println("No file");
         }
@@ -74,7 +83,7 @@ public class MusicService {
 
 
     public void save() {
-        List<String> data = records.stream().map(Music::toString).toList();
+        List<String> data = records.stream().map(MusicCsvParser::toLine).toList();
         try {
             Writer.write("saved.csv",String.join("\n",data));
             System.out.println("Saved successfully");
