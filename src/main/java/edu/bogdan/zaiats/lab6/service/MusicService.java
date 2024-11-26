@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Scanner;
 
 public class MusicService {
 
@@ -20,17 +21,42 @@ public class MusicService {
           System.out.println("The record is added to your collection");
    }
 
-   public void read() {
+   public void show() {
        var records = String.join("\n",this.records.toString());
-       if (this.records.isEmpty()){
+       if (records.isBlank()){
+           System.out.println("Nothing to show");
+           return;
+       }
+       System.out.println("Type name of  music, that you want to listen");
+       var scanner = new Scanner(System.in);
+       var predicate = scanner.nextLine();
+       var found = findRecord(predicate,this.records);
+       if (found.isEmpty()){
            System.out.println("The box of records is empty!\n Put some melodies in it");
            return;
        }
-       System.out.println(records);
+       System.out.println(found);
    }
 
 
-     public void load(){
+   public void removeRecord(){
+       System.out.println("Which music? you want to read");
+       var scanner = new Scanner(System.in);
+       var predicate = scanner.nextLine();
+       var found = findRecord(predicate,this.records);
+       System.out.println("Select music");
+       for (var music : found){
+           System.out.println(found.indexOf(music) + " " + music);
+       }
+       var idx = scanner.nextInt();
+       if(idx >= found.size() || idx < 0 ){
+           System.out.println("idx is out of range");
+           return;
+       }
+       records.remove(idx);
+       System.out.println("The Music removed from the list\n Type Save, if you want the change");
+   }
+   public void load(){
         try {
             var data = Reader.readFile("saved.csv");
 
@@ -51,13 +77,15 @@ public class MusicService {
         List<String> data = records.stream().map(Music::toString).toList();
         try {
             Writer.write("saved.csv",String.join("\n",data));
+            System.out.println("Saved successfully");
         } catch (IOException e) {
             System.out.println("Something went wrong while saving the file");
             System.out.println(e.toString());
         }
     }
 
-    public void removeRecord() {
-
+    public List<Music> findRecord(String predicate,List<Music> records) {
+        return records.stream()
+              .filter(record -> record.toString().toLowerCase().contains(predicate.toLowerCase())).toList();
     }
 }

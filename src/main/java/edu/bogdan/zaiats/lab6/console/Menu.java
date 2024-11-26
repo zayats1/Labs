@@ -4,7 +4,6 @@ import edu.bogdan.zaiats.lab6.commands.Command;
 
 import java.io.PrintStream;
 import java.util.*;
-import java.util.concurrent.Callable;
 
 public class Menu  {
     protected HashMap<String, Command> commands;
@@ -27,7 +26,6 @@ public class Menu  {
             String name = entry.getKey();
             names.add(name);
         }
-        // .replaceAll(",","\n").replaceAll("[\\[\\]]","");
         return names;
     }
 
