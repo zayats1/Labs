@@ -12,10 +12,15 @@ public class MusicService {
    public  void addRecord(){
           var music = MusicReader.read(System.in);
           music.ifPresent(records::add);
+          System.out.println("The record is added to your collection");
    }
 
    public void read() {
        var records = String.join("\n",this.records.toString());
+       if (this.records.isEmpty()){
+           System.out.println("The box of records is empty!\n Put some melodies in it");
+           return;
+       }
        System.out.println(records);
    }
 }
