@@ -32,7 +32,7 @@ class Main {
             }
 
             if (commandName.equals("Quit")){
-                 System.exit(1);
+                 System.exit(0);
             }
 
             var command = menu.get(commandName);
