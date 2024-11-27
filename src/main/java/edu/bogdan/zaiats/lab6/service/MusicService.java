@@ -93,7 +93,7 @@ public class MusicService {
         }
     }
 
-    public List<Music> findRecord(String predicate,List<Music> records) {
+     List<Music> findRecord(String predicate, List<Music> records) {
         return records.stream()
               .filter(record -> record.toString().toLowerCase().contains(predicate.toLowerCase())).toList();
     }
