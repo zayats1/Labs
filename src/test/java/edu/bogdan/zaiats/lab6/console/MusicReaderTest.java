@@ -36,5 +36,7 @@ class MusicReaderTest {
         assertEquals(new Music(
                 "Foreword", "Meteora", "Linkin park", "0:13", "rock"
         ), music.get());
+        music = MusicReader.read(new ByteArrayInputStream("".getBytes()));
+        assertFalse(music.isPresent());
     }
 }
