@@ -50,12 +50,12 @@ public String help(){
 public void show(Scanner console, PrintStream out) {
         while (true) {
             var commandName = console.nextLine();
-        if (commandName.equals("Help") || commandName.equals("h")) {
-            this.help();
+        if (commandName.equalsIgnoreCase("Help") || commandName.equals("h")) {
+            System.out.println(this.help());
             continue;
         }
 
-        if (commandName.equals("Quit")) {
+        if (commandName.equalsIgnoreCase("Quit")) {
             break;
         }
 
