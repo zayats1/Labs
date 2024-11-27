@@ -30,11 +30,6 @@ public class Menu {
     }
 
 
-    @Override
-    public String toString() {
-        return this.help();
-    }
-
     public Optional<Command> get(String name) {
         if (commands.containsKey(name)) {
             return Optional.of(commands.get(name));
