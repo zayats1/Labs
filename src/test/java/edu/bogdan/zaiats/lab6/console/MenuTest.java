@@ -12,7 +12,11 @@ class MenuTest {
     void help() {
         var menu = new Menu();
         var help = menu.help();
-        assertEquals("Available Commands\nQuit\nHelp\n" + "\n", help);
+        assertEquals("""
+                Available Commands
+                Quit
+                Help
+                """, help);
     }
 
 
