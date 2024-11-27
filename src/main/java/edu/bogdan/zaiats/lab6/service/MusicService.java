@@ -22,17 +22,17 @@ public class MusicService {
    }
 
    public void show() {
-       var records = String.join("\n",this.records.toString());
-       if (records.isBlank()){
+       if (this.records.isEmpty()){
            System.out.println("Nothing to show");
            return;
        }
-       System.out.println("Type name of  music, that you want to listen");
+       var records = String.join("\n",this.records.toString());
+       System.out.println("Type  music, that you want to listen(defult: all)");
        var scanner = new Scanner(System.in);
        var predicate = scanner.nextLine();
        var found = findRecord(predicate,this.records);
        if (found.isEmpty()){
-           System.out.println("The box of records is empty!\n Put some melodies in it");
+           System.out.println("The music is not found");
            return;
        }
 
