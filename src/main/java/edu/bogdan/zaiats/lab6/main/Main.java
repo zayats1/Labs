@@ -11,7 +11,6 @@ class Main {
         var console = new Scanner(System.in);
         var service = new MusicService();
         var menu = new Menu(new Show(service),new Add(service),new Save(service),new Load(service),new Remove(service));
-        console = new Scanner(System.in);
         System.out.println(menu.help());
         menu.show(console,System.out);
     }

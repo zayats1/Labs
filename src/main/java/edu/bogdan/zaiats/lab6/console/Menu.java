@@ -5,7 +5,7 @@ import edu.bogdan.zaiats.lab6.commands.Command;
 import java.io.PrintStream;
 import java.util.*;
 
-public class Menu  {
+public class Menu {
     protected HashMap<String, Command> commands;
 
     public Menu(Command... commands) {
@@ -43,25 +43,26 @@ public class Menu  {
         }
     }
 
-public String help(){
-        return "Available Commands" + "\n" + "Quit" + "\n" + "Help" + "\n"  + String.join("\n", this.getNames());
+    public String help() {
+        return "Available Commands" + "\n" + "Quit" + "\n" + "Help" + "\n" + String.join("\n", this.getNames());
 
-}
-public void show(Scanner console, PrintStream out) {
+    }
+
+    public void show(Scanner console, PrintStream out) {
         while (true) {
             var commandName = console.nextLine();
-        if (commandName.equalsIgnoreCase("Help") || commandName.equals("h")) {
-            System.out.println(this.help());
-            continue;
+            if (commandName.equalsIgnoreCase("Help") || commandName.equals("h")) {
+                System.out.println(this.help());
+                continue;
+            }
+
+            if (commandName.equalsIgnoreCase("Quit")) {
+                break;
+            }
+
+            var command = this.get(commandName);
+
+            command.ifPresentOrElse(Command::execute, () -> out.print("Try again\n To see commands type Help\n"));
         }
-
-        if (commandName.equalsIgnoreCase("Quit")) {
-            break;
-        }
-
-        var command = this.get(commandName);
-
-        command.ifPresentOrElse(Command::execute, () -> out.print("Try again\n To see commands type Help\n"));
     }
-}
 }
