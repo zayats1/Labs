@@ -26,8 +26,8 @@ public class MusicService {
            System.out.println("Nothing to show");
            return;
        }
-       var records = String.join("\n",this.records.toString());
-       System.out.println("Type  music, that you want to listen(defult: all)");
+
+       System.out.println("Type  music, that you want to listen(default: all)");
        var scanner = new Scanner(System.in);
        var predicate = scanner.nextLine();
        var found = findRecord(predicate,this.records);
@@ -53,11 +53,23 @@ public class MusicService {
        System.out.println("Select music");
        var scanner = new Scanner(System.in);
        var predicate = scanner.nextLine();
+       if (predicate.isBlank() ) {
+           System.out.println("Nothing to remove");
+           return;
+       }
        var found = findRecord(predicate,this.records);
        for (var music : found){
            System.out.println(found.indexOf(music) + " " + music);
        }
-       var idx = scanner.nextInt();
+       var idx = -1;
+       try {
+       var scanned = scanner.nextLine();
+           idx  = Integer.parseInt(scanned);
+       } catch (Exception e) {
+           System.out.println("Nothing to remove");
+           return;
+       }
+
        if(idx >= found.size() || idx < 0 ){
            System.out.println("idx is out of range");
            return;
