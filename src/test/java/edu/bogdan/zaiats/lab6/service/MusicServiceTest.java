@@ -14,10 +14,11 @@ import java.io.PrintStream;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MusicServiceTest {
-    private final MusicService service = new MusicService();
+    private  MusicService service;
     private final ByteArrayOutputStream printRes = new ByteArrayOutputStream();
     @BeforeEach
     void before() {
+        service = new MusicService();
         try {
             printRes.flush();
         } catch (IOException e) {
@@ -40,11 +41,26 @@ class MusicServiceTest {
         var data = "Foreword\nMeteora\nLinkin park\n0:13\nrock\n";
         service.addRecord();
         System.setIn(new ByteArrayInputStream(data.getBytes()));
-
+        service.show();
+        var out = printRes.toString();
+        var expected = """
+                Enter name of the record
+                Album name
+                Author name
+                Durations
+                Style
+                The record is added to your collection
+                Type  music, that you want to listen(default: all)
+                Foreword  Meteora  Linkin park  0:13  rock
+                """;
+        assertEquals(expected, out);
     }
 
     @Test
     void show() {
+        service.show();
+        var out = printRes.toString();
+        assertEquals("Nothing to show\n", out);
     }
 
     @Test
@@ -54,20 +70,13 @@ class MusicServiceTest {
         Select music
         Nothing to remove
         """;
-        
-        
-        
-        
-        
-        
-        
-        
-        
 
         var empty = new ByteArrayInputStream("\n".getBytes());
         service.removeRecord();
         var out = printRes.toString();
         assertEquals(expected, out);
+
+        service.addRecord();
     }
 
     @Test
