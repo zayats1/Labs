@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7deb25e7-9a1e-4eee-b4dc-5b5f65164148" name="Changes" comment="remove unnecessary to String in the menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab6/console/MenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab6/console/MenuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bogdan_zaiats_report_lab6.odt" beforeDir="false" afterPath="$PROJECT_DIR$/bogdan_zaiats_report_lab7.odt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +43,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="GradleRunConfiguration" name="MenuTest.show" />
-    </enabled-run-configurations>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -57,27 +52,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Labs [:edu.bogdan.zaiats.lab6.main.Main.main()].executor": "Run",
-    "Gradle.MenuTest.executor": "Run",
-    "Gradle.MenuTest.show.executor": "Run",
-    "Gradle.MusicReaderTest.read.executor": "Run",
-    "Gradle.MusicServiceTest.addRecord.executor": "Run",
-    "Gradle.MusicServiceTest.executor": "Run",
-    "Gradle.MusicServiceTest.findRecord.executor": "Run",
-    "Gradle.MusicServiceTest.removeRecord.executor": "Run",
-    "Gradle.MusicServiceTest.show.executor": "Run",
-    "Gradle.Tests in 'Labs.test'.executor": "Coverage",
-    "Gradle.Tests in 'edu.bogdan.zaiats.lab6.service'.executor": "Coverage",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "lab7",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Labs [:edu.bogdan.zaiats.lab6.main.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MenuTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MenuTest.show.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MusicReaderTest.read.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MusicServiceTest.addRecord.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MusicServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MusicServiceTest.findRecord.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MusicServiceTest.removeRecord.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MusicServiceTest.show.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'Labs.test'.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.Tests in 'edu.bogdan.zaiats.lab6.service'.executor&quot;: &quot;Coverage&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab7&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -361,7 +356,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Labs$Tests_in__Labs_test_.ic" NAME="Tests in 'Labs.test' Coverage Results" MODIFIED="1733671895650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Labs$Tests_in__Labs_test_.ic" NAME="Tests in 'Labs.test' Coverage Results" MODIFIED="1733684566528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/Labs$Tests_in__edu_bogdan_zaiats_lab6_service_.ic" NAME="Tests in 'edu.bogdan.zaiats.lab6.service' Coverage Results" MODIFIED="1733671385969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
