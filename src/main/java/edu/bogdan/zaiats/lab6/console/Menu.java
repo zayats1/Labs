@@ -46,7 +46,7 @@ public class Menu {
     public void show(Scanner console, PrintStream out) {
         while (true) {
             var commandName = console.nextLine();
-            if (commandName.equalsIgnoreCase("Help") || commandName.equals("h")) {
+            if (commandName.equalsIgnoreCase("Help")) {
                 System.out.println(this.help());
                 continue;
             }
@@ -57,7 +57,7 @@ public class Menu {
 
             var command = this.get(commandName);
 
-            command.ifPresentOrElse(Command::execute, () -> out.print("Try again\n To see commands type Help\n"));
+            command.ifPresentOrElse(Command::execute, () -> out.print("Try again\nTo see commands type Help\n"));
         }
     }
 }

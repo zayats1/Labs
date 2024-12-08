@@ -47,25 +47,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Labs [:edu.bogdan.zaiats.lab6.main.Main.main()].executor": "Run",
-    "Gradle.MenuTest.executor": "Run",
-    "Gradle.MenuTest.show.executor": "Run",
-    "Gradle.MusicReaderTest.read.executor": "Run",
-    "Gradle.MusicServiceTest.addRecord.executor": "Run",
-    "Gradle.MusicServiceTest.executor": "Run",
-    "Gradle.MusicServiceTest.removeRecord.executor": "Run",
-    "Gradle.MusicServiceTest.show.executor": "Run",
-    "Gradle.Tests in 'Labs.test'.executor": "Coverage",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "lab7",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Labs [:edu.bogdan.zaiats.lab6.main.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MenuTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MenuTest.show.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MusicReaderTest.read.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MusicServiceTest.addRecord.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MusicServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MusicServiceTest.removeRecord.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MusicServiceTest.show.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'Labs.test'.executor&quot;: &quot;Coverage&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab7&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -76,7 +76,7 @@
       <recent name="edu.bogdan.zaiats.lab6.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MenuTest.show">
+  <component name="RunManager" selected="Gradle.Tests in 'Labs.test'">
     <configuration name="MenuTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -197,9 +197,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'Labs.test'" />
         <item itemvalue="Gradle.MenuTest.show" />
         <item itemvalue="Gradle.MenuTest" />
-        <item itemvalue="Gradle.Tests in 'Labs.test'" />
         <item itemvalue="Gradle.MusicServiceTest.removeRecord" />
         <item itemvalue="Gradle.MusicServiceTest.addRecord" />
       </list>
@@ -323,15 +323,10 @@
           <line>8</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab6/console/MenuTest.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Labs$Tests_in__Labs_test_.ic" NAME="Tests in 'Labs.test' Coverage Results" MODIFIED="1733601031853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Labs$Tests_in__Labs_test_.ic" NAME="Tests in 'Labs.test' Coverage Results" MODIFIED="1733669337742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

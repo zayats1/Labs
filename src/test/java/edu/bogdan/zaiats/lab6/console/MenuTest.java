@@ -71,6 +71,7 @@ class MenuTest {
 
         var data = """
                 Help
+                
                 Quit
                 """;
         System.setIn(new ByteArrayInputStream(data.getBytes()));
@@ -86,19 +87,8 @@ class MenuTest {
                 Save
                 Load
                 Remove
-                
                 Try again
-                 To see commands type Help
-                Help
-                Available Commands
-                Quit
-                Help
-                Show
-                Add
-                Save
-                Load
-                Remove
-                Quit
+                To see commands type Help
                 """;
         var out = printRes.toString();
         assertEquals(expected, out);
