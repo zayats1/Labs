@@ -28,8 +28,16 @@ public class MusicService {
        }
 
        System.out.println("Type  music, that you want to listen(default: all)");
+
        var scanner = new Scanner(System.in);
-       var predicate = scanner.nextLine();
+       var predicate = "";
+       try {
+           predicate = scanner.nextLine();
+       } catch (Exception _) {
+           predicate = "";
+           // Todo: logs
+       }
+
        var found = findRecord(predicate,this.records);
        if (found.isEmpty()){
            System.out.println("The music is not found");
@@ -75,7 +83,7 @@ public class MusicService {
            return;
        }
        records.remove(idx);
-       System.out.println("The Music removed from the list\n Type Save, if you want the change");
+       System.out.println("The Music removed from the list\nType Save, if you want the change");
    }
    public void load(){
         try {

@@ -16,6 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MenuTest {
     private final ByteArrayOutputStream printRes = new ByteArrayOutputStream();
+
     @BeforeEach
     void before() {
         try {
@@ -29,10 +30,11 @@ class MenuTest {
     }
 
     @AfterEach
-    void after(){
+    void after() {
         System.setIn(System.in);
         System.setOut(System.out);
     }
+
     @Test
     void help() {
         var menu = new Menu();
