@@ -27,7 +27,8 @@ public class MusicReader {
              var style = scanner.nextLine();
              return Optional.of(new Music(name,album,author,duration,style));
         } catch (NoSuchElementException  e) {
-             System.out.println("Nothing to parse"); // TODO log
+             System.out.println("Nothing to parse");
+
 
 
         } catch (IllegalStateException e) {

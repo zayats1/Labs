@@ -5,6 +5,8 @@ import edu.bogdan.zaiats.lab6.csv.MusicCsvParser;
 import edu.bogdan.zaiats.lab6.music.Music;
 import edu.bogdan.zaiats.lab6.storage.Reader;
 import edu.bogdan.zaiats.lab6.storage.Writer;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -13,7 +15,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class MusicService {
-
+    protected  final Logger logger = LogManager.getLogger();
     private  final List<Music> records = new LinkedList<>();
    public  void addRecord(){
           var music = MusicReader.read(System.in);
@@ -24,6 +26,7 @@ public class MusicService {
    public void show() {
        if (this.records.isEmpty()){
            System.out.println("Nothing to show");
+           logger.debug("Nothing to show");
            return;
        }
 
@@ -33,14 +36,15 @@ public class MusicService {
        var predicate = "";
        try {
            predicate = scanner.nextLine();
-       } catch (Exception _) {
+       } catch (Exception e) {
            predicate = "";
-           // Todo: logs
+           logger.error("No lines to parse \n{}",e.getMessage());
        }
 
        var found = findRecord(predicate,this.records);
        if (found.isEmpty()){
            System.out.println("The music is not found");
+           logger.debug("The music is not found");
            return;
        }
 
@@ -75,19 +79,23 @@ public class MusicService {
            idx  = Integer.parseInt(scanned);
        } catch (Exception e) {
            System.out.println("Nothing to remove");
+           logger.error("Nothing to remove\n{}",e.toString());
            return;
        }
 
        if(idx >= found.size() || idx < 0 ){
            System.out.println("idx is out of range");
+           logger.error("idx is out of the range, idx = {}, found size is: {}",idx,found.size());
            return;
        }
        records.remove(idx);
        System.out.println("The Music removed from the list\nType Save, if you want the change");
+       logger.debug("User removed a music record");
    }
    public void load(){
+       var filename = "saved.csv";
         try {
-            var data = Reader.readFile("saved.csv");
+            var data = Reader.readFile(filename);
 
         for (var line : data){
               var music = MusicCsvParser.fromLine(line);
@@ -96,8 +104,10 @@ public class MusicService {
               }
             }
            System.out.println("Loaded");
+            logger.debug("User loaded a file");
         } catch (FileNotFoundException e) {
            System.out.println("No file");
+           logger.error("File {} was not found",filename);
         }
      }
 
@@ -109,7 +119,7 @@ public class MusicService {
             System.out.println("Saved successfully");
         } catch (IOException e) {
             System.out.println("Something went wrong while saving the file");
-            System.out.println(e.toString());
+            logger.error("Something went wrong while saving the file\n {}",e.getMessage());
         }
     }
 

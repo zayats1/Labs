@@ -43,7 +43,6 @@ public class Menu {
 
     public String help() {
         return "Available Commands" + "\n" + "Quit" + "\n" + "Help" + "\n" + String.join("\n", this.getNames());
-
     }
 
     public void show(Scanner console, PrintStream out) {
@@ -52,16 +51,24 @@ public class Menu {
             var commandName = console.nextLine();
             if (commandName.equalsIgnoreCase("Help")) {
                 System.out.println(this.help());
+                logger.info("User wants to know the commands");
                 continue;
             }
 
             if (commandName.equalsIgnoreCase("Quit")) {
+                logger.info("User quits the menu");
                 break;
             }
 
             var command = this.get(commandName);
-
-            command.ifPresentOrElse(Command::execute, () -> out.print("Try again\nTo see commands type Help\n"));
+            logger.debug(commandName);
+            command.ifPresentOrElse(c ->{
+                c.execute();
+                logger.debug("User executed the {}  command",c.getName());
+            }, () -> {
+                out.print("Try again\nTo see commands type Help\n");
+                logger.warn("User enters wrong command");
+            });
         }
     }
 }
