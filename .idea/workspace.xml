@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7deb25e7-9a1e-4eee-b4dc-5b5f65164148" name="Changes" comment="remove unnecessary to String in the menu">
+    <list default="true" id="7deb25e7-9a1e-4eee-b4dc-5b5f65164148" name="Changes" comment="lab8 report">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bogdan_zaiats_report_lab6.odt" beforeDir="false" afterPath="$PROJECT_DIR$/bogdan_zaiats_report_lab7.odt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lab7&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab8&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
 }</component>
@@ -290,7 +290,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732699440155</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="lab8 begin">
+      <option name="closed" value="true" />
+      <created>1733689416360</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1733689416360</updated>
+    </task>
+    <task id="LOCAL-00012" summary="lab8 report">
+      <option name="closed" value="true" />
+      <created>1733689440876</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1733689440876</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -304,7 +320,9 @@
     <MESSAGE value="make private functions package private for testing" />
     <MESSAGE value="remove unnecessary to String in the music record" />
     <MESSAGE value="remove unnecessary to String in the menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove unnecessary to String in the menu" />
+    <MESSAGE value="lab8 begin" />
+    <MESSAGE value="lab8 report" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab8 report" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -323,11 +341,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab6/service/MusicServiceTest.java</url>
           <line>47</line>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/service/MusicService.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab6/service/MusicServiceTest.java</url>
