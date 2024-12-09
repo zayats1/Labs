@@ -1,11 +1,14 @@
 package edu.bogdan.zaiats.lab6.console;
 
 import edu.bogdan.zaiats.lab6.commands.Command;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.PrintStream;
 import java.util.*;
 
 public class Menu {
+    protected  final Logger logger = LogManager.getLogger();
     protected HashMap<String, Command> commands;
 
     public Menu(Command... commands) {
@@ -44,6 +47,7 @@ public class Menu {
     }
 
     public void show(Scanner console, PrintStream out) {
+        logger.info("Menu");
         while (true) {
             var commandName = console.nextLine();
             if (commandName.equalsIgnoreCase("Help")) {
