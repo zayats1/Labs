@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7deb25e7-9a1e-4eee-b4dc-5b5f65164148" name="Changes" comment="remove unused mokito dependency">
+    <list default="true" id="7deb25e7-9a1e-4eee-b4dc-5b5f65164148" name="Changes" comment="update kotlin version for gradle script">
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +45,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KotlinScriptingSettings">
+    <option name="suppressDefinitionsCheck" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -71,12 +75,17 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "lab8",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.language.Kotlin.scripting"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="edu.bogdan.zaiats.lab6.console" />
@@ -84,7 +93,7 @@
       <recent name="edu.bogdan.zaiats.lab6.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'Labs.test'">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.bogdan.zaiats.lab6.main.Main" />
       <module name="Labs.main" />
@@ -315,7 +324,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733761992879</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add log4j">
+      <option name="closed" value="true" />
+      <created>1733762278537</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1733762278537</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update kotlin version for gradle script">
+      <option name="closed" value="true" />
+      <created>1733762303337</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1733762303337</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -332,7 +357,9 @@
     <MESSAGE value="lab8 begin" />
     <MESSAGE value="lab8 report" />
     <MESSAGE value="remove unused mokito dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove unused mokito dependency" />
+    <MESSAGE value="add log4j" />
+    <MESSAGE value="update kotlin version for gradle script" />
+    <option name="LAST_COMMIT_MESSAGE" value="update kotlin version for gradle script" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -343,11 +370,6 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/main/Main.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab6/service/MusicServiceTest.java</url>
           <line>47</line>
           <option name="timeStamp" value="19" />
@@ -356,6 +378,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab6/service/MusicServiceTest.java</url>
           <line>41</line>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/main/Main.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/edu/bogdan/zaiats/lab6/service/MusicServiceTest.java</url>

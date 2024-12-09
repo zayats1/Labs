@@ -48,3 +48,4 @@ bin/
 .venv
 !/.idea/misc.xml
 !/.idea/workspace.xml
+/logs/main.log
