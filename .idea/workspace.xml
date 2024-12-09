@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7deb25e7-9a1e-4eee-b4dc-5b5f65164148" name="Changes" comment="update kotlin version for gradle script">
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/main/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="7deb25e7-9a1e-4eee-b4dc-5b5f65164148" name="Changes" comment="Logging begin" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -340,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733762303337</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Logging begin">
+      <option name="closed" value="true" />
+      <created>1733765020860</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1733765020861</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -359,7 +362,8 @@
     <MESSAGE value="remove unused mokito dependency" />
     <MESSAGE value="add log4j" />
     <MESSAGE value="update kotlin version for gradle script" />
-    <option name="LAST_COMMIT_MESSAGE" value="update kotlin version for gradle script" />
+    <MESSAGE value="Logging begin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logging begin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
