@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7deb25e7-9a1e-4eee-b4dc-5b5f65164148" name="Changes" comment="Trying to log">
+    <list default="true" id="7deb25e7-9a1e-4eee-b4dc-5b5f65164148" name="Changes" comment="ok ok ok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bogdan_zaiats_report_lab8.odt" beforeDir="false" afterPath="$PROJECT_DIR$/bogdan_zaiats_report_lab8.odt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved.csv" beforeDir="false" afterPath="$PROJECT_DIR$/saved.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/console/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/console/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/console/MusicReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/console/MusicReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/service/MusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bogdan/zaiats/lab6/service/MusicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -368,7 +361,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733766888925</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Logs done right">
+      <option name="closed" value="true" />
+      <created>1733778600079</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1733778600079</updated>
+    </task>
+    <task id="LOCAL-00020" summary="ok ok ok">
+      <option name="closed" value="true" />
+      <created>1733778613089</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1733778613089</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -390,7 +399,9 @@
     <MESSAGE value="Logging begin" />
     <MESSAGE value="properties" />
     <MESSAGE value="Trying to log" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to log" />
+    <MESSAGE value="Logs done right" />
+    <MESSAGE value="ok ok ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok ok ok" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
